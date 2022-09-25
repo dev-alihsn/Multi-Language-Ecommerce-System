@@ -1,0 +1,1 @@
+<img src="{{asset('pesto/img/logo.png')}}" alt="">
