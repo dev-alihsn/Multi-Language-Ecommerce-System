@@ -21,8 +21,8 @@ class CategoryFactory extends Factory
             'name' => $this->faker->sentence(),
             'slug' => $this->faker->slug(),
             'es' => [
-                'name' => $this->faker->sentence(),
-                'slug' => $this->faker->slug()
+                'name' => fake('es-ES')->sentence(),
+                'slug' => fake('es-ES')->slug()
             ],
             'user_id' => User::all()->random()->id
         ];

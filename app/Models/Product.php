@@ -22,4 +22,8 @@ class Product extends Model
     function discounts(){
         return $this->belongsToMany(Discount::class);
     }
+
+    function image(){
+        return $this->morphOne(Image::class,'imageable');
+    }
 }

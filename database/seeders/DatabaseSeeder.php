@@ -28,6 +28,7 @@ class DatabaseSeeder extends Seeder
          $products =\App\Models\Product::factory(50)->create();
           //\App\Models\Product::all();
          foreach($products as $product){
+            $product->image()->save(\App\Models\Image::factory()->make());
             $discounts_ids = [];
             $discounts_ids[] = \App\Models\Discount::all()->random()->id;
             $discounts_ids[] = \App\Models\Discount::all()->random()->id;

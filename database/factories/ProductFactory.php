@@ -22,8 +22,8 @@ class ProductFactory extends Factory
             'title' => $this->faker->sentence(),
             'description' => $this->faker->text(),
             'es' => [
-                'title' => $this->faker->sentence(),
-                'description' => $this->faker->text()
+                'title' => fake('es-ES')->sentence(),
+                'description' => fake('es-ES')->text()
             ],
             'quantity' => rand(1,100),
             'price' => rand(1,100),

@@ -18,7 +18,7 @@ class DiscountFactory extends Factory
     {
         return [
             'name' => $this->faker->sentence(),
-            'es' => ['name' => $this->faker->sentence()],
+            'es' => ['name' => fake('es-ES')->sentence()],
             'discount_precent' => rand(1,27),
             'coupon' => $this->faker->word()
         ];
